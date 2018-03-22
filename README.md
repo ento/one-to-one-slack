@@ -10,17 +10,17 @@ the other person is in do-not-disturb mode.
 pip install -r requirements.txt
 ```
 
-Get yourself a Slack access token.
+Get yourself a [legacy Slack access token](https://api.slack.com/custom-integrations/legacy-tokens).
 
 ### One-off channel creation
 
 ```
 SLACK_TOKEN=xoxp-xxxxxxx python main.py create \
-    --first-message "Message to post after creating a channel (optional)"
-    --purpose "Purpose of the channel (optional)"
-    --dry-run
-    other-name
-    other-person-slack-user-id
+    --first-message "Message to post after creating a channel (optional)" \
+    --purpose "Purpose of the channel (optional)" \
+    --dry-run \
+    other-name \
+    other-person-slack-user-id \
     my-name
 ```
 
